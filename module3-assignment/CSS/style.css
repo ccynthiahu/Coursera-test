@@ -1,1 +1,48 @@
 
+body {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+/** HEADER **/
+
+#header-nav {
+  background-color: aqua;
+}
+
+.navbar-brand {
+  padding-top: 25px;
+}
+
+.navbar-brand h1 { /* Business name */
+  text-transform: uppercase;
+  font-weight: bold;    
+}
+
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+
+/* END HEADER */
+
+h2 {
+  margin-top: 30px;
+}
+
+.container {
+  background-color: aqua;
+  padding-top: 30px;
+  margin-top: 30px;
+}
+
+
+/********** Desktop and tablet only **********/
+
+
+/********** Mobile only **********/
+
+@media (max-width: 576px) {
+  .container {
+    margin-right: 30px;
+    margin-left: 30px;
+  }
+}
