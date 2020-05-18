@@ -130,7 +130,7 @@ h3 {
 @media (min-width: 992px) {
 #contact-info {
   order: 2;
-  margin-left: -30px;
+  
 }
 #contact-form {
   order: 1;
@@ -143,9 +143,10 @@ h3 {
   padding-top: 10px;  
 }
 
+/* this may make the form not centered on cell phone
 div#contact-form {
   margin: 0 15px 0 15px;
-}
+} related to this is margin-left: -30px; on #contact-info after order: 2 */
 /* end of contact */
 
 /* style social media links */
