@@ -1,0 +1,229 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'open sans', sans-serif;  
+}
+
+/* style the header */
+.header {
+  padding-top: 20px;
+  text-align: center;  
+}
+
+.brand h1 {
+  font-family: 'Oregano', cursive;
+  color: #008037;
+}
+
+.logo a {
+  text-decoration: none;
+}
+
+.logo a:hover {
+  opacity: 0.7;
+}
+/* end of header. Navbar is completely bootstrap. */
+
+h2 {
+  display: inline-block;  
+  margin-top: 15px;
+  padding: 10px;
+  font-family: 'Oregano', cursive;
+  color: #008037;
+  font-weight: bold;
+  border: 2px solid #008037;
+  border-radius: 5px;
+}
+
+h4 {
+  color: #008037;
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+  font-family: 'Oregano', cursive;
+  color: #008037;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.content-wrapper {
+  color: #008037;
+  padding: 10px;
+}
+
+/* clear floats after the columns. Is this a must? */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+} 
+
+/* style product category background images and responsive sizes */
+#wood, #plush, #clothing, #other, #food, #organic, #book {
+  height: 300px;  
+  width: 100%;
+  margin-bottom: 15px;
+  overflow: hidden;
+  font-size: 80%;
+}
+#wood {
+  background: url('images/wooden toy_360 by 300.jpg') no-repeat;
+  background-position: center;
+}
+#plush {
+  background: url('images/stuffed toy_360 by 300.jpg') no-repeat;
+  background-position: center;
+}
+#clothing {
+  background: url('images/boy on beach_360 by 300.jpg') no-repeat;
+  background-position: center;
+}
+#other {
+  background: url('images/paper boats_360 by 300.jpg') no-repeat;
+  background-position: center;
+}
+#food {
+  background: url('images/food_360 by 300.jpg') no-repeat;
+  background-position: center;
+}
+#organic {
+  background: url('images/natural organic_360 by 300.jpg') no-repeat;
+  background-position: center;
+}
+#book {
+  background: url('images/books_360 by 300.jpg') no-repeat;
+  background-position: center;
+  color: white;
+}
+
+/* adjust background image size on cell phone screens */
+@media (max-width: 768px) {
+  #wood, #plush, #clothing, #other, #food, #organic, #book {
+    width: 360px;
+    margin: 0 auto 15px;
+  }
+}
+/* adjust background image size on desktop screens */
+@media (min-width: 992px) {
+  #wood, #plush, #clothing, #other, #food, #organic, #book {
+    width: 360px;
+  }
+}
+
+/* style the link and hover effects of product categories */
+.row a {
+  text-decoration: none;
+  text-align: center;
+  color: black;
+}
+
+#wood:hover, #plush:hover, #clothing:hover, #other:hover, #food:hover, #organic:hover, #book:hover {
+  box-shadow: 0 1px 5px 1px #000000;
+  opacity: 0.7;
+}
+/* end of product categories */
+
+/* style contact section */
+@media (min-width: 992px) {
+#contact-info {
+  order: 2;
+  margin-left: -30px;
+}
+#contact-form {
+  order: 1;
+}
+}
+
+#contact-form p {
+  font-family: 'Oregano', cursive;
+  font-size: 1.2em;
+  padding-top: 10px;  
+}
+
+div#contact-form {
+  margin: 0 15px 0 15px;
+}
+/* end of contact */
+
+/* style social media links */
+.fa {
+  box-sizing: content-box;
+  padding: 10px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 10px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-instagram {
+  background: #c32aa3;
+  color: white;
+}
+
+/* table caption does not work because of bootstrap */
+table#credits {
+  width: 100%;
+  text-align: center;
+  font-size: 0.9em;
+}
+
+table#credits tr {
+  border-bottom: 1px solid #008037;  
+}
+
+table#credits th {
+  color: #008037; 
+}
+
+table#credits a {
+  text-decoration: none;
+}
+
+/* style footer */
+footer a {
+  text-decoration: none;
+  color: white;
+}
+
+footer a:hover {
+  text-decoration: none;
+  color: black;
+}
+
+footer {
+  padding: 10px;
+  color: white;
+  background-color: #5cb85c;
+  text-align: center;
+  font-size: 90%;
+}
+
+footer div#copyright {
+  font-family: 'Oregano', cursive;
+  font-size: 120%;
+}
+/* end of footer */
+
+/* style product page */
+.col {
+  
+}
