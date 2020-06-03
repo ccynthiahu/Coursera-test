@@ -94,12 +94,7 @@ h3 {
   background-position: center;  
 }
 
-/* style the link and hover effects of product categories */
-.row a {
-  text-decoration: none;
-  text-align: center;
-  color: black;
-}
+/* removed .row a styles to index.html */
 
 #wood:hover, #plush:hover, #clothing:hover, #other:hover, #food:hover, #organic:hover, #book:hover {
   opacity: 0.8;
