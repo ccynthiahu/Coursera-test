@@ -20,29 +20,26 @@ body {
 }
 /* end of header. Navbar is completely bootstrap. */
 
-h2 {
-  display: inline-block;  
-  margin-top: 15px;
-  padding: 10px;
+h2, h3, h4 {
   font-family: 'Oregano', cursive;
   color: #008037;
   font-weight: bold;
+}
+
+h2 {
+  display: inline-block;  
+  margin-top: 15px;
+  padding: 10px;   
   border: 2px solid #008037;
   border-radius: 5px;
 }
 
-h4 {
-  color: #008037;
-  font-weight: bold;
+h3, h4 {
   text-align: center;
 }
 
 h3 {
-  text-align: center;
-  font-family: 'Oregano', cursive;
-  color: #008037;
   font-size: 1.2rem;
-  font-weight: bold;
 }
 
 .content-wrapper {
@@ -94,7 +91,7 @@ h3 {
   background-position: center;  
 }
 
-/* removed .row a styles to index.html */
+/* moved .row a style to index.html, because it affects product details */
 
 #wood:hover, #plush:hover, #clothing:hover, #other:hover, #food:hover, #organic:hover, #book:hover {
   opacity: 0.8;
@@ -118,37 +115,38 @@ h3 {
 }
 
 /* style social media links */
-.fa {
+.fa {  
+  text-align: center;
+  text-decoration: none;  
+}
+
+.fa-youtube, .fa-facebook, .fa-instagram {
   box-sizing: content-box;
   padding: 10px;
   font-size: 30px;
   width: 30px;
-  text-align: center;
-  text-decoration: none;
   margin: 5px 10px;
-  border-radius: 50%;  
-}
-
-.fa:hover {
-  opacity: 0.7;
+  border-radius: 50%; 
+  color: white;
 }
 
 .fa-youtube {
-  background: #bb0000;
-  color: white;
+  background: #bb0000;  
 }
 
 .fa-facebook {
-  background: #3B5998;
-  color: white;
+  background: #3B5998;  
 }
 
 .fa-instagram {
-  background: #c32aa3;
-  color: white;
+  background: #c32aa3; 
 }
 
-/* table caption does not work because of bootstrap */
+.fa-youtube:hover, .fa-facebook:hover, .fa-instagram:hover {
+  opacity: 0.7;
+}
+
+/* style credits table */
 table#credits {
   width: 100%;
   text-align: center;
@@ -179,6 +177,18 @@ footer div#copyright {
 /* end of footer */
 
 /* style product page */
-.col {
-  
+.fa-check-circle {
+  color: #008037;
+  margin-right: 10px;     
+}
+    
+.fa-check-circle + span {
+  color: #008037;
+}
+
+.fa-flag {
+  display: inline; 
+  color: #ff5757; 
+  font-size: 1.2rem; 
+  margin-right: 10px;         
 }
