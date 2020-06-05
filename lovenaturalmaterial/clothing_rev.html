@@ -7,23 +7,12 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css2?family=Oregano&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="style_rev.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
 	<style type="text/css">		
 		h5 {
   			color: #008037;
   		}
-		
-		/* moved to CSS
-		.fa-li.fa.fa-flag {
-  			display: inline; 
-  			color: #ff5757; 
-  			font-size: 1.2rem; 
-  			padding: 0px; 
-  			margin: 0px 10px 0px 0px;
-  			border: none;
-		}
-		*/
-				
+							
   		/* how to center iframe */
   		iframe {
   			display: block;
@@ -84,12 +73,13 @@
 <div class="container">
 	<h2>Products</h2>
 
-	<h4 class="mt-2 mb-4">Focus on Babies and Kids</h4>
-
-	<h5 class="text-center mt-4"><em>Cotton/Wool Clothing and Accessories</em></h5>
-	<div class="categroy-description bg-info text-light" style="margin:10px 30px 10px 30px; padding: 10px; border-radius: 15px;">
-	<p class="text-center">Clothes and accessories that are 100% cotton, organic cotton, merino, lamb, or alpaca wool, feather or down, silk, or other natural material.</p></div>
-	 
+	<div class="container mt-3 text-center">
+  	<h4 class="mt-2 mb-4">Focus on Babies and Kids</h4>
+      <button type="button" class="btn btn-primary mt-4" data-toggle="collapse" data-target="#clothing-description">Cotton/Wool Clothing and Accessories</button>
+      <div class="collapse mt-3" id="clothing-description" style="color: #008037">
+      Clothes and accessories that are 100% cotton, organic cotton, merino, lamb, or alpaca wool, feather or down, silk, or other natural material.</div>
+	</div>
+	
 	<ul class="fa-ul">
 		<li><i class="fa-li fa fa-flag" aria-hidden="true"></i><h6><b>So Much to Love About Wearable Blankets/Sleep Sacks</b></h6></li>
 	</ul>
