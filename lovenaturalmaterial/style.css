@@ -182,8 +182,13 @@ footer div#copyright {
   margin-right: 10px;     
 }
     
-.fa-check-circle + span {
+.fa-check-circle + a {
+  text-decoration: none;
   color: #008037;
+}
+
+.fa-check-circle + a:hover {
+  color: #17a2b8;
 }
 
 .fa-flag {
