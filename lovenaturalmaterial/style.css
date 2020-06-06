@@ -191,6 +191,10 @@ footer div#copyright {
   color: blue;
 }
 
+.fa-check-circle + a.active {
+  color: #ff5757; 
+}
+
 .fa-flag {
   display: inline; 
   color: #ff5757; 
